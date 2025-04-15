@@ -10,6 +10,7 @@
 import SwiftUI
 
 struct SocialFeedView: View {
+    @AppStorage("isLoggedIn") var isLoggedIn = true
     @StateObject private var viewModel = SocialViewModel()
     @State private var showingCreatePost = false  // ✅ Declare this
 
@@ -29,6 +30,15 @@ struct SocialFeedView: View {
                         }
                     }
                     .padding()
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Log Out") {
+                            User.logout { _ in
+                                isLoggedIn = false
+                            }
+                        }
+                    }
                 }
 
                 // ✅ Floating "New Post" Button
@@ -52,6 +62,7 @@ struct SocialFeedView: View {
         .sheet(isPresented: $showingCreatePost) {
             CreatePostView(viewModel: viewModel)
         }
+        
     }
 }
 

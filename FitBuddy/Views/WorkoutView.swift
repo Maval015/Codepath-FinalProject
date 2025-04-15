@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct WorkoutView: View {
+    @AppStorage("isLoggedIn") var isLoggedIn = true
     @StateObject private var viewModel = WorkoutViewModel()
     @State private var showingLogSheet = false
 
@@ -70,6 +71,15 @@ struct WorkoutView: View {
             .sheet(isPresented: $showingLogSheet) {
                 LogWorkoutView(viewModel: viewModel)
             }
+            .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button("Log Out") {
+                                    User.logout { _ in
+                                        isLoggedIn = false
+                                    }
+                                }
+                            }
+                        }
         }
     }
 }

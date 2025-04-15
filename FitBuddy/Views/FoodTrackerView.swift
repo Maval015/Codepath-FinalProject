@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct FoodTrackerView: View {
+    @AppStorage("isLoggedIn") var isLoggedIn = true
     @StateObject private var viewModel = FoodViewModel()
     @State private var showingLogSheet = false
 
@@ -69,6 +70,15 @@ struct FoodTrackerView: View {
             .navigationTitle("Food Tracker")
             .sheet(isPresented: $showingLogSheet) {
                 LogFoodView(viewModel: viewModel)
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Log Out") {
+                        User.logout { _ in
+                            isLoggedIn = false
+                        }
+                    }
+                }
             }
         }
     }
