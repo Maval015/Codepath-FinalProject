@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF3F36C02DADFA30005F279A /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF3F36BF2DADFA30005F279A /* ParseSwift */; };
+		EB618B6E2DAEE002009E96A7 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB618B6D2DAEE002009E96A7 /* ParseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF3F36C02DADFA30005F279A /* ParseSwift in Frameworks */,
+				EB618B6E2DAEE002009E96A7 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = FitBuddy;
 			packageProductDependencies = (
-				EF3F36BF2DADFA30005F279A /* ParseSwift */,
+				EB618B6D2DAEE002009E96A7 /* ParseSwift */,
 			);
 			productName = FitBuddy;
 			productReference = EB44F4F12DAD9BFB00B6EDAA /* FitBuddy.app */;
@@ -101,7 +101,7 @@
 			mainGroup = EB44F4E82DAD9BFB00B6EDAA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EF3F36BE2DADFA30005F279A /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				EB618B6C2DAEE002009E96A7 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EB44F4F22DAD9BFB00B6EDAA /* Products */;
@@ -261,7 +261,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitBuddy/Preview Content\"";
-				DEVELOPMENT_TEAM = HY89YL39V8;
+				DEVELOPMENT_TEAM = 7GLN5J3U8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -274,7 +274,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fiu.ybord.FitBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = fiu.maval015.FitBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -290,7 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FitBuddy/Preview Content\"";
-				DEVELOPMENT_TEAM = HY89YL39V8;
+				DEVELOPMENT_TEAM = 7GLN5J3U8S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fiu.ybord.FitBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = fiu.maval015.FitBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,9 +335,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EF3F36BE2DADFA30005F279A /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+		EB618B6C2DAEE002009E96A7 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.14.2;
@@ -346,9 +346,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EF3F36BF2DADFA30005F279A /* ParseSwift */ = {
+		EB618B6D2DAEE002009E96A7 /* ParseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EF3F36BE2DADFA30005F279A /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			package = EB618B6C2DAEE002009E96A7 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -120,20 +120,26 @@ struct CreatePostView: View {
 
             let subtitle = "🔥 \(cal) kcal • 🥩 \(pro)g • 🍞 \(carb)g"
 
+            let username = User.current?.username ?? "Anonymous"
+
             let post = SocialPost(
                 type: .meal,
                 photo: postImage,
                 title: "Shared a Meal",
                 subtitle: subtitle,
                 notes: note,
-                timestamp: Date()
+                timestamp: Date(),
+                username: username
             )
             viewModel.posts.append(post)
+            
         } else {
             let mins = Int(time) ?? 0
             let stp = Int(steps) ?? 0
 
             let subtitle = "🔥 \(cal) kcal • ⏱ \(mins) min • 👣 \(stp) steps"
+
+            let username = User.current?.username ?? "Anonymous"
 
             let post = SocialPost(
                 type: .workout,
@@ -141,7 +147,8 @@ struct CreatePostView: View {
                 title: "Completed a Workout",
                 subtitle: subtitle,
                 notes: note,
-                timestamp: Date()
+                timestamp: Date(),
+                username: username
             )
             viewModel.posts.append(post)
         }

@@ -22,4 +22,5 @@ struct SocialPost: Identifiable {
     let subtitle: String
     let notes: String
     let timestamp: Date
+    let username: String
 }

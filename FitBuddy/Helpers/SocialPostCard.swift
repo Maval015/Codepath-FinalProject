@@ -36,6 +36,11 @@ struct SocialPostCard: View {
                 Text("📝 \(post.notes)")
                     .font(.body)
             }
+            
+            // Username
+            Text("👤 \(post.username)")
+                .font(.caption)
+                .foregroundColor(.blue)
 
             // Timestamp — naturally flows after content
             Text(post.timestamp.formatted(date: .abbreviated, time: .shortened))
