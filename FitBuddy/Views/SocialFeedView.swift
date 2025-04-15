@@ -10,21 +10,49 @@
 import SwiftUI
 
 struct SocialFeedView: View {
+    @StateObject private var viewModel = SocialViewModel()
+    @State private var showingCreatePost = false  // ✅ Declare this
+
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Friend Activity")
-                    .font(.title)
+            ZStack(alignment: .bottomTrailing) {
+                ScrollView {
+                    VStack(spacing: 20) {
+                        if viewModel.posts.isEmpty {
+                            Text("No shared posts yet.")
+                                .foregroundColor(.gray)
+                                .padding()
+                        } else {
+                            ForEach(viewModel.posts.sorted(by: { $0.timestamp > $1.timestamp })) { post in
+                                SocialPostCard(post: post)
+                            }
+                        }
+                    }
                     .padding()
-
-                List {
-                    Text("🏋️ John just finished a 5km run!")
-                    Text("🍎 Lisa logged a healthy breakfast.")
                 }
 
-                Spacer()
+                // ✅ Floating "New Post" Button
+                Button(action: {
+                    showingCreatePost = true
+                }) {
+                    Image(systemName: "plus")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .clipShape(Circle())
+                        .shadow(radius: 5)
+                }
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
+                .accessibilityLabel("Create New Post")
             }
-            .navigationTitle("Social")
+            .navigationTitle("Social Feed")
+        }
+        .sheet(isPresented: $showingCreatePost) {
+            CreatePostView(viewModel: viewModel)
         }
     }
 }
+
+
