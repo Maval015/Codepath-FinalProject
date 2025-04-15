@@ -2,7 +2,7 @@
 //  CreatePostView.swift
 //  FitBuddy
 //
-//  Created by michel avalos on 4/15/25.
+//  Created by michel avalos on 4/1/25.
 //
 
 

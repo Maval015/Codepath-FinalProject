@@ -2,7 +2,7 @@
 //  User.swift
 //  FitBuddy
 //
-//  Created by Yailan Bordas on 4/14/25.
+//  Created by Yailan Bordas on 4/1/25.
 //
 
 import Foundation

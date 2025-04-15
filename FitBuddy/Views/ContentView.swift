@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  FitBuddy
 //
-//  Created by michel avalos on 4/14/25.
+//  Created by michel avalos on 4/1/25.
 //
 
 import SwiftUI

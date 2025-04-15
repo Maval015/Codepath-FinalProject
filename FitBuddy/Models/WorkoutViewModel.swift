@@ -2,7 +2,7 @@
 //  WorkoutViewModel.swift
 //  FitBuddy
 //
-//  Created by michel avalos on 4/14/25.
+//  Created by michel avalos on 4/1/25.
 //
 
 
@@ -48,9 +48,22 @@ class WorkoutViewModel: ObservableObject {
     }
 
     func logWorkout(type: String, calories: Int, time: Int, steps: Int) {
-        let newWorkout = Workout(type: type, calories: calories, timeMinutes: time, steps: steps)
-        workouts.append(newWorkout)
-    }
+            let newWorkout = Workout(type: type, calories: calories, timeMinutes: time, steps: steps)
+            workouts.append(newWorkout)
+
+            guard let user = User.current else { return }
+            let log = WorkoutLog(workout: newWorkout, user: user)
+
+            // ✅ Fixed the throwing error
+            try? log.save { result in
+                switch result {
+                case .success:
+                    print("✅ Workout saved to backend.")
+                case .failure(let error):
+                    print("❌ Failed to save workout: \(error.localizedDescription)")
+                }
+            }
+        }
 }
 
 

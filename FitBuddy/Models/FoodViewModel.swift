@@ -2,7 +2,7 @@
 //  FoodViewModel.swift
 //  FitBuddy
 //
-//  Created by michel avalos on 4/14/25.
+//  Created by michel avalos on 4/1/25.
 //
 
 
@@ -30,8 +30,21 @@ class FoodViewModel: ObservableObject {
     }
 
     func logFood(_ entry: FoodEntry) {
-        foodEntries.append(entry)
-    }
+            foodEntries.append(entry)
+
+            guard let user = User.current else { return }
+            let log = FoodLog(entry: entry, user: user)
+
+            // ✅ Fixed the throwing error
+            try? log.save { result in
+                switch result {
+                case .success:
+                    print("✅ Food saved to backend.")
+                case .failure(let error):
+                    print("❌ Failed to save food: \(error.localizedDescription)")
+                }
+            }
+        }
 
     func calorieProgress() -> Double {
         min(Double(totalCalories) / Double(calorieGoal), 1.0)

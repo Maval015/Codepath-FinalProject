@@ -2,7 +2,7 @@
 //  SocialPostCard.swift
 //  FitBuddy
 //
-//  Created by michel avalos on 4/15/25.
+//  Created by michel avalos on 4/2/25.
 //
 
 import SwiftUI
