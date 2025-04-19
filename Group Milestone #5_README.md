@@ -95,3 +95,12 @@ Scope: With the social/tracking elements combined, I say the app is rather dynam
 * [POST] /classes/ParseSocialPost	Upload a new food or workout post
 * [POST] /classes/Workout	Save user-specific workout
 * [POST] /classes/FoodEntry	Save user’s meal data
+
+## Final Demo
+<div>
+    <a href="https://www.loom.com/share/3d181f8405ab43408668cadae9e21324">
+    </a>
+    <a href="https://www.loom.com/share/3d181f8405ab43408668cadae9e21324">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/3d181f8405ab43408668cadae9e21324-1377e8b5349dfa34-full-play.gif">
+    </a>
+  </div>
