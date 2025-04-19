@@ -32,9 +32,9 @@ Scope: With the social/tracking elements combined, I say the app is rather dynam
 
 **Required Must-have Stories**
 
-[X] User can Sign in/Create an Account.
-[X] User can see three tabs (Workout, Food Intake, Social).
-[X] Users can log their workouts/caloric consumption.
+- [X] User can Sign in/Create an Account.
+- [X] User can see three tabs (Workout, Food Intake, Social).
+- [X] Users can log their workouts/caloric consumption.
 
 **Optional Nice-to-have Stories**
 
