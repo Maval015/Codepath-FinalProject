@@ -98,9 +98,9 @@ Scope: With the social/tracking elements combined, I say the app is rather dynam
 
 ## Final Demo
 <div>
-    <a href="https://www.loom.com/share/3d181f8405ab43408668cadae9e21324">
+    <a href="https://youtu.be/SoEmO0HfZ_k">
     </a>
-    <a href="https://www.loom.com/share/3d181f8405ab43408668cadae9e21324">
+    <a href="https://youtu.be/SoEmO0HfZ_k">
       <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/3d181f8405ab43408668cadae9e21324-1377e8b5349dfa34-full-play.gif">
     </a>
   </div>
