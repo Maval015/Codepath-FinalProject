@@ -36,6 +36,14 @@ Scope: With the social/tracking elements combined, I say the app is rather dynam
 - [X] User can see three tabs (Workout, Food Intake, Social).
 - [X] Users can log their workouts/caloric consumption.
 
+<div>
+    <a href="https://www.loom.com/share/4b30c1e9d461467eaee5e36f8a310728">
+    </a>
+    <a href="https://www.loom.com/share/4b30c1e9d461467eaee5e36f8a310728">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4b30c1e9d461467eaee5e36f8a310728-64a68a35b90f2ca8-full-play.gif">
+    </a>
+  </div>
+
 **Optional Nice-to-have Stories**
 
 * Users can use their cameras to add a picture of their food.
